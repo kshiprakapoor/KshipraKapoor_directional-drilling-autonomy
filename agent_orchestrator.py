@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from math import radians, sin
+from math import cos, radians, sin
 from typing import Dict, List, Sequence, Tuple
 
 import numpy as np
