@@ -276,6 +276,7 @@ if control_col_b.button("Reset", use_container_width=True):
 st.sidebar.caption(
     "Interview-scale reduced-order simulation. Steering force and vibration models are illustrative, "
     "not Halliburton proprietary models."
+)
     
 st.title(
     "Directional Drilling "
