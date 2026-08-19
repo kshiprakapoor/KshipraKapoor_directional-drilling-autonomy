@@ -276,13 +276,23 @@ if control_col_b.button("Reset", use_container_width=True):
 st.sidebar.caption(
     "Interview-scale reduced-order simulation. Steering force and vibration models are illustrative, "
     "not Halliburton proprietary models."
+    
+st.title(
+    "Directional Drilling "
+    "Obstacle-Avoidance Simulation"
 )
 
-st.title("Directional Drilling Obstacle-Avoidance Simulation")
+st.markdown(
+    """
+    **Developed by Kshipra Kapoor, PhD**  
+    *Electrical & Computer Engineering | Automation | AI-Enabled Engineering Systems*
+    """
+)
+
 st.caption(
-    "Local trajectory MPC + deterministic supervisory agent + structural-health response"
+    "Constrained trajectory MPC + supervisory autonomous "
+    "hazard avoidance + structural-health telemetry"
 )
-
 archive_bytes = build_project_archive()
 st.download_button(
     "Download Complete Project Archive (.zip)",
@@ -409,3 +419,10 @@ else:
     st.success(
         "Agentic mode monitors the geometric look-ahead zone and can replace trajectory setpoints while leaving low-level steering to the constrained MPC."
     )
+st.markdown("---")
+
+st.caption(
+    "Developed by Kshipra Kapoor, PhD | "
+    "Electrical & Computer Engineering | "
+    "Independent engineering R&D demonstration"
+)
